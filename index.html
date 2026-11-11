@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOTOLAB </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+<header class="main-header d-flex justify-content-between align-items-center p-3 shadow-sm sticky-top">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="FOTOLAB" class="nav-logo">
+    </a>
+
+
+        <input type="checkbox" id="menu-toggle" class="d-none">
+        <label for="menu-toggle" class="menu-icon d-lg-none">
+            <i class="fa-solid fa-bars text-white fs-3"></i>
+        </label>
+
+        <nav class="side-nav">
+            <label for="menu-toggle" class="close-btn d-lg-none">&times;</label>
+            
+            <ul class="nav-links-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="compare.html">Comparison</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contect.html">Contact</a></li>
+                <div class="d-flex align-items-center gap-3">
+        <div class="cart-icon position-relative">
+            <i class="fa-solid fa-cart-plus fs-4 text-white"></i>
+            <span id="cart-count">0</span>
+        </div>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<label for="menu-toggle" class="menu-overlay"></label>
+<section class="hero">
+    <div class="hero-bg"></div> 
+    
+    <div class="hero-content">
+        <h2>Discover Your Gear</h2>
+        <p>Capture Every Moment with Perfection</p>
+    </div>
+</section>
+
+
+<!-- card slider-->
+ <section class="featured-picks">
+    <div class="container-custom">
+        <h2 class="section-title">New Arrivals</h2>
+    </div>
+<!--1-->
+   <div class="owl-carousel owl-theme">
+    <div class="item"> <div class="product-card">
+        <div class="product-img">
+        <img src="images/canon4.webp" alt="">
+        </div>
+        <h3 class="product-brand">Canon</h3>
+        <h4 class="product-name">Mirrorless (R Series)</h4>
+        <p class="product-price">$700 </p>
+       <a href="product-12.html" class="btn btn-dark">Details</a>
+</div>
+</div>
+<!--2-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/sonycamera4.webp" alt="">
+        </div>
+        <h3 class="product-brand">Sony </h3>
+        <h4 class="product-name">Sony Alpha 9 III </h4>
+        <p class="product-price"> $5,999</p>
+        <a href="product-82.html" class="btn btn-dark">Details</a>
+ </div>
+    </div>
+<!--3-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/fujifilmlense4.jfif" alt="">
+        </div>
+        <h3 class="product-brand">Fujifilmcamera </h3>
+        <h4 class="product-name">XF 27mm f/2.8 R WR</h4>
+        <p class="product-price">$399</p>
+            
+        <a href="product-120.html" class="btn btn-dark">Details</a>
+ </div>
+    </div>
+<!--4-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/nikonaccesory5.jfif" alt="">
+        </div>
+        <h3 class="product-brand">Nikon</h3>
+        <h4 class="product-name"> Nikon ML-L7 </h4>
+        <p class="product-price">$45</p>
+            
+        <a href="product77.html" class="btn btn-dark">Details</a>
+ </div>
+    </div>
+<!--5-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/canontp1.jpg" alt="">
+        </div>
+        <h3 class="product-brand">Canon</h3>
+        <h4 class="product-name">  Tabletop Tripods canon</h4>
+        <p class="product-price">$50</p>
+        <a href="product-16.html" class="btn btn-dark">Details</a>
+    </div>
+    </div>
+    <!--6-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/fujifilmlense3.jfif" alt="">
+        </div>
+        <h3 class="product-brand">Fujifilm</h3>
+        <h4 class="product-name">XF 56mm f/1.2 R WR</h4>
+        <p class="product-price"> $999</p>
+        <a href="product-119.html" class="btn btn-dark">Details</a>
+ </div>
+    </div>
+ <!--7-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/canonaudio4.jfif" alt="">
+        </div>
+        <h3 class="product-brand">Canon</h3>
+        <h4 class="product-name"> Microphone DM-E100</h4>
+        <p class="product-price">$120</p>
+        <a href="product-41.html" class="btn btn-dark">Details</a>
+    </div>
+    </div>
+<!--8-->
+    <div class="item">
+  <div class="product-card">
+        <div class="product-img">
+            <img src="images/sonytripod1.avif" alt="">
+        </div>
+        <h3 class="product-brand">Sony</h3>
+        <h4 class="product-name">Sony VCT-VPR1 </h4>
+        <p class="product-price">$100</p>
+        <a href="product-89.html" class="btn btn-dark">Details</a>
+    </div>
+    </div>
+<!--9-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/canonadapter1.jfif" alt="">
+        </div>
+        <h3 class="product-brand">Canon</h3>
+        <h4 class="product-name"> Mount Adapter EF-EOS R.</h4>
+        <p class="product-price">$500</p>
+        <a href="product-34.html" class="btn btn-dark">Details</a>
+    </div>
+    </div>
+<!--10-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/nikonbag5.png" alt="">
+        </div>
+        <h3 class="product-brand">Nikon</h3>
+        <h4 class="product-name"> Nikon Compact Bag</h4>
+        <p class="product-price">$25</p>
+            
+        <a href="product-72.html" class="btn btn-dark">Details</a>
+ </div>
+    </div>
+<!--11-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+        <img src="images/nikonlight2.jfif" alt="">
+        </div>
+        <h3 class="product-brand">Nikon</h3>
+        <h4 class="product-name">Nikon R1C1 Wireless </h4>
+        <p class="product-price">$700 </p>
+       <a href="product-65.html" class="btn btn-dark">Details</a>
+</div>
+    </div>
+<!--12-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/sonyaccesory2.jfif" alt="">
+        </div>
+        <h3 class="product-brand">Sony</h3>
+        <h4 class="product-name">Sony PCK-LG1  Glass Sheet</h4>
+        <p class="product-price">$98.00</p>
+        <a href="product-106.html" class="btn btn-dark">Details</a>
+    </div>
+    </div>
+</div>
+   
+<!--split section-->
+<section class="split-section">
+    <div class="split-text">
+        <div class="content-wrapper">
+            <h2>What's New</h2>
+            <p>Explore all products to keep you going places and capturing moments.</p>
+            <a href="product.html" class="btn-shop">ALL PRODUCTS HERE</a>
+        </div>
+    </div>
+
+    <div class="split-image">
+        <img src="images/splitbg.webp" alt="Photography Gear">
+    </div>
+</section>
+
+<!--end-->
+<section class="featured-picks">
+    <div class="container-custom">
+        <h2 class="section-title">Best Sellers</h2>
+    </div>
+<!--1-->
+  <div class="owl-carousel owl-theme">
+    <div class="item"><div class="product-card">
+        <div class="product-img">
+            <img src="images/sonytripod.avif" alt="">
+        </div>
+        <h3 class="product-brand">Sony</h3>
+        <h4 class="product-name"> Sony GP-VPT2BT </h4>
+        <p class="product-price">$140 </p>
+      <a href="product-84.html" class="btn btn-dark">Details</a>
+        
+</div>
+</div>
+<!--2-->
+    <div class="item"><div class="product-card">
+        <div class="product-img">
+            <img src="images/nikoncamera1.webp" alt="">
+        </div>
+        <h3 class="product-brand">Nikon</h3>
+        <h4 class="product-name">Nikon Z9 </h4>
+        <p class="product-price">$5,200 </p>
+      <a href="product-42.html" class="btn btn-dark">Details</a>
+        
+</div>
+</div>
+<!--3-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/fujifilmacesory8.png" alt="">
+        </div>
+        <h3 class="product-brand">Fujifilm </h3>
+        <h4 class="product-name">RR-100 Remote Release</h4>
+        <p class="product-price"> $42</p>
+        <a href="product-130.html" class="btn btn-dark">Details</a>
+ </div>
+    </div>
+    <!--4-->
+    <div class="item">
+         <div class="product-card">
+        <div class="product-img">
+            <img src="images/sonytripod.avif" alt="">
+        </div>
+        <h3 class="product-brand">Sony</h3>
+        <h4 class="product-name"> Sony GP-VPT2BT </h4>
+        <p class="product-price">$140 </p>
+      <a href="product-84.html" class="btn btn-dark">Details</a>
+        
+</div>
+    </div>
+    <!--5-->
+    <div class="item"><div class="product-card">
+        <div class="product-img">
+            <img src="images/sonylense1.jpg" alt="">
+        </div>
+        <h3 class="product-brand">Sony</h3>
+        <h4 class="product-name"> FE 24-70mm f/2.8 GM II</h4>
+        <p class="product-price">$2,299.99</p>
+      <a href="product-90.html" class="btn btn-dark">Details</a>
+        
+</div>
+</div>
+ <!--6-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/sonylight2.jfif" alt="">
+        </div>
+        <h3 class="product-brand">Sony</h3>
+        <h4 class="product-name">HVL-F28RM </h4>
+        <p class="product-price">$248.00</p>
+        <a href="product-102.html" class="btn btn-dark">Details</a>
+    </div>
+    </div>
+    <!--7-->
+    <div class="item">
+         <div class="product-card">
+        <div class="product-img">
+            <img src="images/fujifilmlense4.jfif" alt="">
+        </div>
+        <h3 class="product-brand">Fujifilmcamera </h3>
+        <h4 class="product-name">XF 27mm f/2.8 R WR</h4>
+        <p class="product-price">$399</p>
+            
+        <a href="product-120.html" class="btn btn-dark">Details</a>
+ </div>
+    </div>
+    <!--8-->
+    <div class="item">
+        <div class="product-card">
+        <div class="product-img">
+            <img src="images/canontp1.jpg" alt="">
+        </div>
+        <h3 class="product-brand">Canon</h3>
+        <h4 class="product-name"> Mini Tripods </h4>
+        <p class="product-price">$50</p>
+        <a href="product-16.html" class="btn btn-dark">Details</a>
+    </div>
+    </div>
+    <!--9-->
+    <div class="item"><div class="product-card">
+        <div class="product-img">
+            <img src="images/canonlence1.jpg" alt="">
+        </div>
+        <h3 class="product-brand">Canon</h3>
+        <h4 class="product-name">EF-S Lenses </h4>
+        <p class="product-price">$ 400</p>
+        <a href="product-21.html" class="btn btn-dark">Details</a>
+    </div>
+</div>
+<!--10-->
+    <div class="item">
+<div class="product-card">
+        <div class="product-img">
+            <img src="images/nikonaudio1.jfif" alt="">
+        </div>
+        <h3 class="product-brand">Nikon</h3>
+        <h4 class="product-name"> ME-1 Stereo Microphone</h4>
+        <p class="product-price">$130 </p>
+      <a href="product-59.html" class="btn btn-dark">Details</a>
+        
+</div>
+    </div>
+</div>
+<!--product-->
+<section class="featured-picks">
+    <div class="container-custom">
+        <h2 class="section-title">Our Top Picks</h2>
+        
+        <div class="picks-grid">
+            <div class="picks-banner">
+                <img src="images/banner3.png" alt="Featured Lifestyle">
+            </div>
+
+            <div class="picks-list">
+                <h3>Featured Products</h3>
+                <div class="scroll-area">
+                    <!--1-->
+                    <div class="pick-item">
+                        <div class="item-img-box">
+                            <img src="images/nikoncamera1.webp" alt="Product 1">
+                        </div>
+                        <div class="pick-info">
+                            <p class="brand">Nikon</p>
+                            <p class="name">Nikon Z9 (The Flagship)</p>
+                            <p class="price">$5,200</p>
+                        </div>
+                        <div class="pick-actions">
+                            <span class="badge-stock">In Stock</span>
+                            <a href="product-42.html" class="btn-detail">Details</a>
+                        </div>
+                    </div>
+                       <!--2-->
+                    <div class="pick-item">
+                        <div class="item-img-box">
+                            <img src="images/fujifilmacesory1.webp" alt="Product 2">
+                        </div>
+                        <div class="pick-info">
+                            <p class="brand">Fujifilm</p>
+                            <p class="name"> Fujifilm TG-BT1</p>
+                            <p class="price">$199</p>
+                        </div>
+                        <div class="pick-actions">
+                            <span class="badge-stock">In Stock</span>
+                            <a href="product-123.html" class="btn-detail">Details</a>
+                        </div>
+                    </div>
+
+                    <!--3-->
+                    <div class="pick-item">
+                        <div class="item-img-box">
+                            <img src="images/canon3.jpg" alt="Product 2">
+                        </div>
+                        <div class="pick-info">
+                            <p class="brand">Canon</p>
+                            <p class="name">DSLR Cameras (Digital SLR)</p>
+                            <p class="price">$500</p>
+                        </div>
+                        <div class="pick-actions">
+                            <span class="badge-stock">In Stock</span>
+                            <a href="product-11.html" class="btn-detail">Details</a>
+                        </div>
+                    </div>
+
+                    <!--4-->
+                    <div class="pick-item">
+                        <div class="item-img-box">
+                            <img src="images/canonaudio1.png" alt="Product 2">
+                        </div>
+                        <div class="pick-info">
+                            <p class="brand">Canon</p>
+                            <p class="name"> Canon DM-E1D Stereo Microphone</p>
+                            <p class="price">$199</p>
+                        </div>
+                        <div class="pick-actions">
+                            <span class="badge-stock">In Stock</span>
+                            <a href="product-38.html" class="btn-detail">Details</a>
+                        </div>
+                    </div>
+
+                   <!--5-->
+                    <div class="pick-item">
+                        <div class="item-img-box">
+                            <img src="images/nikonacesory3.jfif" alt="Product 2">
+                        </div>
+                        <div class="pick-info">
+                            <p class="brand">Nikon</p>
+                            <p class="name"> Nikon ARCREST II Protection Filter</p>
+                            <p class="price">$50</p>
+                        </div>
+                        <div class="pick-actions">
+                            <span class="badge-stock">In Stock</span>
+                            <a href="product-75.html" class="btn-detail">Details</a>
+                        </div>
+                    </div>
+
+                      <!--6-->
+                    <div class="pick-item">
+                        <div class="item-img-box">
+                            <img src="images/nikonbag5.png" alt="Product 2">
+                        </div>
+                        <div class="pick-info">
+                            <p class="brand">Nikon</p>
+                            <p class="name"> Nikon Yellow & Black Compact Bag</p>
+                            <p class="price">$25</p>
+                        </div>
+                        <div class="pick-actions">
+                            <span class="badge-stock">In Stock</span>
+                            <a href="product-72.html" class="btn-detail">Details</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Brands Section -->
+ <section class="shop-by-brand">
+    <div class="container-custom">
+        <h2 class="brand-title">Shop by Brand</h2>
+        <div class="brand-container">
+            <a href="canon.html" class="brand-logo-item">
+                <img src="images/canonlogo.png" alt="Canon">
+            </a>
+            <a href="nikon.html" class="brand-logo-item">
+                <img src="images/nikonlogo.png" alt="Nikon">
+            </a>
+            <a href="sony.html" class="brand-logo-item">
+                <img src="images/sonylogo.png" alt="Sony">
+            </a>
+            <a href="fujifilm.html" class="brand-logo-item">
+                <img src="images/fujifilm-logo.svg" alt="Fujifilm">
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="py-5 border-top bg-white mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-12 mb-4">
+        <a href="index.html" class="d-flex align-items-center mb-2 text-decoration-none">
+          <img src="images/logo2.png" alt="FOTOLAB" class="footer-logo-black">
+        </a>
+       
+      </div>
+
+       <div class="col-6 col-md-2 mb-3">
+        <h6 class="fw-bold mb-3">Links</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted small">Home</a></li>
+          <li class="nav-item mb-2"><a href="product.html" class="nav-link p-0 text-muted small">Product</a></li>
+          <li class="nav-item mb-2"><a href="compare.html" class="nav-link p-0 text-muted small">Comparison</a></li>
+          <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-muted small">About-us</a></li>
+          <li class="nav-item mb-2"><a href="contect.html" class="nav-link p-0 text-muted small">Contect</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-4">
+        <h6 class="fw-bold small mb-3">Brands</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="nikon.html" class="nav-link p-0 text-muted small">Nikon</a></li>
+          <li class="nav-item mb-2"><a href="canon.html" class="nav-link p-0 text-muted small">Canon</a></li>
+          <li class="nav-item mb-2"><a href="sony.html" class="nav-link p-0 text-muted small">Sony</a></li>
+          <li class="nav-item mb-2"><a href="fujifilm.html" class="nav-link p-0 text-muted small">Fujifilm</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-4">
+        <h6 class="fw-bold small mb-3">Support</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted small">Help Center</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted small">Warranty</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted small">Returns</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted small">FAQs</a></li>
+        </ul>
+      </div>
+<div class="col-lg-3 col-md-6 mb-4">
+  <h6 class="fw-bold small mb-3">CONTACT US</h6>
+  <div class="d-flex flex-column gap-3">
+    <div class="d-flex align-items-center text-muted small">
+      <i class="fas fa-phone-alt me-3 text-dark"></i>
+      <span>+92 300 1234567</span>
+    </div>
+    
+    <div class="d-flex align-items-center text-muted small">
+      <i class="fas fa-envelope me-3 text-dark"></i>
+      <span>info@fotolab.com</span>
+    </div>
+    
+    <div class="d-flex align-items-center gap-2">
+  <a href="contect.html" class="d-flex align-items-center text-decoration-none" style="gap: 10px;">
+    <span class="location-icon">
+      <i class="fas fa-location-dot"></i>
+    </span>
+    <span class="fw-bold small text-dark">Karachi, Pakistan</span>
+  </a>
+</div>
+
+    <div class="d-flex gap-3 mt-1">
+      <a href="#" class="text-dark small"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-dark small"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-dark small"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-dark small"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</div>
+      <div class="pt-4 mt-4 border-top text-center">
+      <p class="text-muted small">© 2026 FOTOLAB. All rights reserved.</p>
+    </div>
+    </div>
+  </div>
+</footer>
+<!-- JS Files -->
+<script src="data.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+</body>
+</html>
+ 

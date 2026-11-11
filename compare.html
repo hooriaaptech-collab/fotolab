@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOTOLAB </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+
+<header class="main-header d-flex justify-content-between align-items-center p-3 shadow-sm sticky-top">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="FOTOLAB" class="nav-logo">
+    </a>
+
+
+        <input type="checkbox" id="menu-toggle" class="d-none">
+        <label for="menu-toggle" class="menu-icon d-lg-none">
+            <i class="fa-solid fa-bars text-white fs-3"></i>
+        </label>
+
+        <nav class="side-nav">
+            <label for="menu-toggle" class="close-btn d-lg-none">&times;</label>
+            
+            <ul class="nav-links-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="compare.html">Comparison</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contect.html">Contact</a></li>
+                <div class="d-flex align-items-center gap-3">
+        <div class="cart-icon position-relative">
+            <i class="fa-solid fa-cart-plus fs-4 text-white"></i>
+            <span id="cart-count">0</span>
+        </div>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<label for="menu-toggle" class="menu-overlay"></label>
+<main class="compare-wrapper">
+    <h1 class="page-heading">Compare Gear</h1>
+
+    <div class="selectors-container">
+        <div>
+            <label class="fw-bold small mb-2 d-block">CHOOSE PRIMARY DEVICE</label>
+            <select class="custom-select" onchange="runCompare(1, this.value)">
+                <option value="||||">-- SELECT CAMERA --</option>
+                <option value="Canon EOS R5|Canon|$3,899|45MP Full-Frame|8K Video">Canon EOS R5</option>
+                <option value="Nikon Z9|Nikon|$5,499|45.7MP Stacked|8K/60p Raw">Nikon Z9</option>
+                <option value="Sony A7 IV|Sony|$2,499|33MP Full-Frame|4K/60p">Sony A7 IV</option>
+                <option value="Fujifilm X-T5|Fujifilm|$1,699|40.2MP APS-C|6.2K/30p">Fujifilm X-T5</option>
+            </select>
+        </div>
+        <div>
+            <label class="fw-bold small mb-2 d-block">CHOOSE SECONDARY DEVICE</label>
+            <select class="custom-select" onchange="runCompare(2, this.value)">
+                <option value="||||">-- SELECT CAMERA --</option>
+                <option value="Canon EOS R5|Canon|$3,899|45MP Full-Frame|8K Video">Canon EOS R5</option>
+                <option value="Nikon Z9|Nikon|$5,499|45.7MP Stacked|8K/60p Raw">Nikon Z9</option>
+                <option value="Sony A7 IV|Sony|$2,499|33MP Full-Frame|4K/60p">Sony A7 IV</option>
+                <option value="Fujifilm X-T5|Fujifilm|$1,699|40.2MP APS-C|6.2K/30p">Fujifilm X-T5</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="table-content">
+        <table class="comparison-table">
+            <tr>
+                <th>Model</th>
+                <td id="res-name1" data-label="Model" class="feature-title">-</td>
+                <td id="res-name2" data-label="Model" class="feature-title">-</td>
+            </tr>
+            <tr>
+                <th>Brand</th>
+                <td id="res-brand1" data-label="Brand">-</td>
+                <td id="res-brand2" data-label="Brand">-</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td id="res-price1" data-label="Price" class="feature-price">-</td>
+                <td id="res-price2" data-label="Price" class="feature-price">-</td>
+            </tr>
+            <tr>
+                <th>Sensor</th>
+                <td id="res-sensor1" data-label="Sensor">-</td>
+                <td id="res-sensor2" data-label="Sensor">-</td>
+            </tr>
+            <tr>
+                <th>Video</th>
+                <td id="res-video1" data-label="Video">-</td>
+                <td id="res-video2" data-label="Video">-</td>
+            </tr>
+        </table>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="py-5 border-top bg-white mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-12 mb-4">
+        <a href="index.html" class="d-flex align-items-center mb-2 text-decoration-none">
+          <img src="images/logo2.png" alt="FOTOLAB" class="footer-logo-black">
+        </a>
+       
+      </div>
+
+       <div class="col-6 col-md-2 mb-3">
+        <h6 class="fw-bold mb-3">Links</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted small">Home</a></li>
+          <li class="nav-item mb-2"><a href="product.html" class="nav-link p-0 text-muted small">Product</a></li>
+          <li class="nav-item mb-2"><a href="compare.html" class="nav-link p-0 text-muted small">Comparison</a></li>
+          <li class="nav-item mb-2"><a href="aboutus.html" class="nav-link p-0 text-muted small">About-us</a></li>
+          <li class="nav-item mb-2"><a href="contect.html" class="nav-link p-0 text-muted small">Contect</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-4">
+        <h6 class="fw-bold small mb-3">Brands</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="nikon.html" class="nav-link p-0 text-muted small">Nikon</a></li>
+          <li class="nav-item mb-2"><a href="canon.html" class="nav-link p-0 text-muted small">Canon</a></li>
+          <li class="nav-item mb-2"><a href="sony.html" class="nav-link p-0 text-muted small">Sony</a></li>
+          <li class="nav-item mb-2"><a href="fujifilm.html" class="nav-link p-0 text-muted small">Fujifilm</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-4">
+        <h6 class="fw-bold small mb-3">Support</h6>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted small">Help Center</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted small">Warranty</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted small">Returns</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted small">FAQs</a></li>
+        </ul>
+      </div>
+<div class="col-lg-3 col-md-6 mb-4">
+  <h6 class="fw-bold small mb-3">CONTACT US</h6>
+  <div class="d-flex flex-column gap-3">
+    <div class="d-flex align-items-center text-muted small">
+      <i class="fas fa-phone-alt me-3 text-dark"></i>
+      <span>+92 300 1234567</span>
+    </div>
+    
+    <div class="d-flex align-items-center text-muted small">
+      <i class="fas fa-envelope me-3 text-dark"></i>
+      <span>info@fotolab.com</span>
+    </div>
+    
+    <div class="d-flex align-items-center gap-2">
+  <a href="contect.html" class="d-flex align-items-center text-decoration-none" style="gap: 10px;">
+    <span class="location-icon">
+      <i class="fas fa-location-dot"></i>
+    </span>
+    <span class="fw-bold small text-dark">Karachi, Pakistan</span>
+  </a>
+</div>
+
+    <div class="d-flex gap-3 mt-1">
+      <a href="#" class="text-dark small"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-dark small"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-dark small"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-dark small"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</div>
+      <div class="pt-4 mt-4 border-top text-center">
+      <p class="text-muted small">© 2026 FOTOLAB. All rights reserved.</p>
+    </div>
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+
+</body>
+</html>
